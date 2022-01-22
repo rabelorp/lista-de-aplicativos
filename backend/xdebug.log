@@ -1,0 +1,24 @@
+[9] Log opened at 2022-01-20 22:47:23
+[9] I: Connecting to configured address/port: host.docker.internal:9001.
+[9] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[9] E: Could not connect to client. :-(
+[9] Log closed at 2022-01-20 22:47:23
+
+[9] Log opened at 2022-01-20 22:47:23
+[9] I: Connecting to configured address/port: host.docker.internal:9001.
+[9] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[9] E: Could not connect to client. :-(
+[9] Log closed at 2022-01-20 22:47:23
+
+[8] Log opened at 2022-01-21 17:48:46
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2022-01-21 17:48:46
+
+[8] Log opened at 2022-01-21 17:48:47
+[8] I: Connecting to configured address/port: host.docker.internal:9001.
+[8] W: Creating socket for 'host.docker.internal:9001', getaddrinfo: Resource temporarily unavailable.
+[8] E: Could not connect to client. :-(
+[8] Log closed at 2022-01-21 17:48:48
+

@@ -1,0 +1,7 @@
+{
+  "name": "App List - Zello",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

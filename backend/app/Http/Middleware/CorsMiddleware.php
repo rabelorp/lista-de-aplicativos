@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Middleware;
+use Symfony\Component\HttpFoundation\Response; 
 
 use Closure;
 
@@ -24,7 +25,7 @@ class CorsMiddleware
 
         if ($request->isMethod('OPTIONS'))
         {
-            return response()->json('{"method":"OPTIONS"}', 200, $headers);
+            return response()->json('{"method":"OPTIONS"}', Response::HTTP_OK, $headers);
         }
 
         $response = $next($request);

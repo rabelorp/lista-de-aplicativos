@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response; 
 
 class AuthController extends Controller
 {
@@ -27,8 +28,8 @@ class AuthController extends Controller
     {
         $credentials = $request->only(['email', 'password']);
         
-        if (!$token = auth()->attempt($credentials)) {
-            return response()->json(['status' => 'Acesso nao autorizado'], 401);
+        if (!$token = auth()->attempt($credentials)) {  
+            return response()->json(['status' => 'Acesso nao autorizado'], Response::HTTP_UNAUTHORIZED);
         }
 
         return $this->respondWithToken($token); 
@@ -53,7 +54,7 @@ class AuthController extends Controller
     {
         auth()->logout();
 
-        return response()->json(['status' => 'Você saiu do sistema']);
+        return response()->json(['status' => 'Você saiu do sistema'], Response::HTTP_OK);
     }
 
     /**
